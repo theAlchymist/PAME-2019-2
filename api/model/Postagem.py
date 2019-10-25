@@ -1,7 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from api.model.Compartilhamento import Compartilhamento
-from api.model.Usuario import Usuario
 
 class Postagem(models.Model):
   # Atributos
@@ -13,8 +11,8 @@ class Postagem(models.Model):
   chave_postagem = models.CharField(max_length=20)
 
   # Relacionamentos
-  compartilhamento = models.OneToOneField(Compartilhamento, on_delete=models.CASCADE)
-  usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+  compartilhamento = models.OneToOneField('api.Compartilhamento', on_delete=models.CASCADE)
+  usuario = models.ForeignKey('api.Usuario', on_delete=models.CASCADE)
 
   def __str__(self):
     return self.chave_postagem

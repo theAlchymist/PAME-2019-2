@@ -1,5 +1,4 @@
 from django.db import models
-from api.model.Notificacao import Notificacao
 
 class Usuario(models.Model):
   # Atributos
@@ -10,7 +9,7 @@ class Usuario(models.Model):
   # foto = models.ImageField()
 
   # Relacionamentos
-  notificacao = models.ManyToManyField(Notificacao)
+  notificacao = models.ManyToManyField('api.Notificacao')
   
   def __str__(self):
     return self.chave_usuario
