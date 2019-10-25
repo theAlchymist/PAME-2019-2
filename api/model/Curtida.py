@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from api.model import Usuario, Comentario, Postagem
 
 class Curtida(models.Model):
   # Atributos
@@ -8,7 +9,7 @@ class Curtida(models.Model):
   chave_entidade = models.CharField(max_length=20)
 
   # Relacionamentos
-  usuario = models.ManyToManyField(Usuario)
+  usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
   comentario = models.ForeignKey(Comentario, on_delete=models.CASCADE)
   postagem = models.ForeignKey(Postagem, on_delete=models.CASCADE)
 

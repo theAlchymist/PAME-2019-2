@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from api.model import Usuario
 
 class Mensagem(models.Model):
   # Atributos

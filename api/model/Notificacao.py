@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from api.model import Comentario, Compartilhamento, Curtida, Mensagem, Postagem
 
 class Notificacao(models.Model):
   # Atributos

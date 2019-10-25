@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from api.model.Usuario import Usuario
-from api.serializers import UsuarioSerializer
+from api.model.Curtida import Curtida
+from api.serializers import CurtidaSerializer
 
-class UsuarioList(APIView):
+class CurtidaList(APIView):
   def get(self, request):
     pass
 

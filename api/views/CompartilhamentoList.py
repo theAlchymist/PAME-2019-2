@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from api.model.Usuario import Usuario
-from api.serializers import UsuarioSerializer
+from api.model.Compartilhamento import Compartilhamento
+from api.serializers import CompartilhamentoSerializer
 
-class UsuarioList(APIView):
+class CompartilhamentoList(APIView):
   def get(self, request):
     pass
 

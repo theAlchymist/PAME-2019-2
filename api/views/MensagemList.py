@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from api.model.Usuario import Usuario
-from api.serializers import UsuarioSerializer
+from api.model.Mensagem import Mensagem
+from api.serializers import MensagemSerializer
 
-class UsuarioList(APIView):
+class MensagemList(APIView):
   def get(self, request):
     pass
 
