@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
-from api.model import Usuario, Postagem
+from api.model.Usuario import Usuario
+from api.model.Postagem import Postagem
 
 class Comentario(models.Model):
   # Atributos

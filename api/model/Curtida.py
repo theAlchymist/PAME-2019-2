@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
-from api.model import Usuario, Comentario, Postagem
+from api.model.Usuario import Usuario
+from api.model.Comentario import Comentario
+from api.model.Postagem import Postagem
 
 class Curtida(models.Model):
   # Atributos

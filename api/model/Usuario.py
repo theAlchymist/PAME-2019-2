@@ -1,5 +1,5 @@
 from django.db import models
-from api.model import Notificacao
+from api.model.Notificacao import Notificacao
 
 class Usuario(models.Model):
   # Atributos

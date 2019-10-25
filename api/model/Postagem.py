@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
-from api.model import Compartilhamento, Usuario
+from api.model.Compartilhamento import Compartilhamento
+from api.model.Usuario import Usuario
 
 class Postagem(models.Model):
   # Atributos
